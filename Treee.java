@@ -43,7 +43,7 @@ class Treee {
             inorderRec(root.right); 
         } 
     } 
-   /* void printPreorder()
+    void printPreorder()
 	{
 		preorder(root);
 	}
@@ -66,7 +66,7 @@ class Treee {
         postorder(root.left); 
         postorder(root.right); 
         System.out.println(root.key + " "); 
-    }*/
+    }
     
     public static void main(String[] args) { 
         Treee tree = new Treee(); 
@@ -79,5 +79,7 @@ class Treee {
 	tree.insert(40);
 	System.out.println("Inorder");  
         tree.inorder(); 
+tree.printPostorder();
+tree.printPreorder();
     } 
 } 
